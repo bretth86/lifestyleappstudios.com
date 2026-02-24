@@ -7,22 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .privacy-content { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-    .privacy-content h1 { margin-bottom: 10px; }
-    .privacy-content .updated { color: #6b7280; margin-bottom: 40px; }
-    .privacy-content h2 { margin-top: 40px; margin-bottom: 16px; color: #1f2937; }
-    .privacy-content p, .privacy-content li { line-height: 1.7; color: #374151; }
-    .privacy-content ul { margin: 16px 0; padding-left: 24px; }
-    .privacy-content table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    .privacy-content th, .privacy-content td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
-    .privacy-content th { background: #f9fafb; font-weight: 600; }
-    .back-link { display: inline-block; margin-bottom: 20px; color: #6366f1; }
-  </style>
 </head>
 <body>
   <nav class="navbar">
-    <a href="/" class="logo">Lifestyle App Studios</a>
+    <a href="../index.html" class="logo">Lifestyle App Studios</a>
+    <ul class="nav-links">
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2zm18 0h2a1 1 0 1 0 0-2h-2a1 1 0 1 0 0 2zM11 2v2a1 1 0 1 0 2 0V2a1 1 0 1 0-2 0zm0 18v2a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 1 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41 0l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06a1 1 0 0 0 0-1.41zM7.05 18.36a1 1 0 0 0-1.41 0l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06a1 1 0 0 0 0-1.41z"/></svg>
+        </button>
+      </li>
+    </ul>
   </nav>
 
   <div class="privacy-content">
@@ -100,9 +96,22 @@
     <p>Style Preview is intended for users 13 and older. We do not knowingly process photos of children under 13.</p>
 
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:privacy@lifestyleappstudios.com">privacy@lifestyleappstudios.com</a></p>
+    <p>Email: <a href="mailto:support@lifestyleappstudios.com">support@lifestyleappstudios.com</a></p>
 
-    <p style="margin-top: 40px; color: #6b7280; font-size: 14px;">&copy; 2024 Lifestyle App Studios. All rights reserved.</p>
+    <p class="copyright">&copy; 2024 Lifestyle App Studios. All rights reserved.</p>
   </div>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
 </body>
 </html>

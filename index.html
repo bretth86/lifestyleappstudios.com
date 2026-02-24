@@ -18,6 +18,12 @@
       <li><a href="#apps">Apps</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2zm18 0h2a1 1 0 1 0 0-2h-2a1 1 0 1 0 0 2zM11 2v2a1 1 0 1 0 2 0V2a1 1 0 1 0-2 0zm0 18v2a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 1 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41 0l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06a1 1 0 0 0 0-1.41zM7.05 18.36a1 1 0 0 0-1.41 0l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06a1 1 0 0 0 0-1.41z"/></svg>
+        </button>
+      </li>
     </ul>
   </nav>
 
@@ -53,8 +59,8 @@
     <div class="apps-grid">
       <!-- FocusCrew -->
       <div class="app-card" data-category="productivity social">
-        <div class="app-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-          🎯
+        <div class="app-icon">
+          <img src="images/focuscrew-logo.png" alt="FocusCrew logo">
         </div>
         <h3>FocusCrew</h3>
         <p class="tagline">Focus together, achieve more.</p>
@@ -64,13 +70,17 @@
           <span class="tag">Social</span>
           <span class="tag">Accountability</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/focuscrew.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- PrivateBooks -->
       <div class="app-card" data-category="finance">
-        <div class="app-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
-          📚
+        <div class="app-icon">
+          <img src="images/privatebooks-logo.png" alt="PrivateBooks logo">
         </div>
         <h3>PrivateBooks</h3>
         <p class="tagline">Your finances, your business.</p>
@@ -80,13 +90,17 @@
           <span class="tag">Offline</span>
           <span class="tag">Finance</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/privatebooks.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- ConsistentMe -->
       <div class="app-card" data-category="productivity">
-        <div class="app-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
-          📈
+        <div class="app-icon">
+          <img src="images/consistentme-logo.png" alt="ConsistentMe logo">
         </div>
         <h3>ConsistentMe</h3>
         <p class="tagline">Consistency over perfection.</p>
@@ -96,13 +110,17 @@
           <span class="tag">No Streaks</span>
           <span class="tag">Mental Health</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/consistentme.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- Slay or Nay -->
       <div class="app-card" data-category="lifestyle">
-        <div class="app-icon" style="background: linear-gradient(135deg, #ec4899, #db2777);">
-          👔
+        <div class="app-icon">
+          <img src="images/slayornay-logo.png" alt="Slay or Nay logo">
         </div>
         <h3>Slay or Nay</h3>
         <p class="tagline">Get a second opinion on your fit.</p>
@@ -112,13 +130,17 @@
           <span class="tag">Fashion</span>
           <span class="tag">Fun</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/slay-or-nay.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- SmartShopi -->
       <div class="app-card" data-category="lifestyle">
-        <div class="app-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
-          🛒
+        <div class="app-icon">
+          <img src="images/smartshopi-logo.png" alt="SmartShopi logo">
         </div>
         <h3>SmartShopi</h3>
         <p class="tagline">Shop smarter, not harder.</p>
@@ -128,13 +150,17 @@
           <span class="tag">Lists</span>
           <span class="tag">Organization</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/smartshopi.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- CrewVote -->
       <div class="app-card" data-category="social">
-        <div class="app-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
-          🗳️
+        <div class="app-icon">
+          <img src="images/crewvote-logo.png" alt="CrewVote logo">
         </div>
         <h3>CrewVote</h3>
         <p class="tagline">Decide together, instantly.</p>
@@ -144,13 +170,17 @@
           <span class="tag">Groups</span>
           <span class="tag">Decisions</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/crewvote.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- Style Preview -->
       <div class="app-card" data-category="lifestyle">
-        <div class="app-icon" style="background: linear-gradient(135deg, #f472b6, #ec4899);">
-          ✨
+        <div class="app-icon">
+          <img src="images/stylepreview-logo.png" alt="Style Preview logo">
         </div>
         <h3>Style Preview</h3>
         <p class="tagline">See it before you commit.</p>
@@ -160,13 +190,17 @@
           <span class="tag">Style</span>
           <span class="tag">Preview</span>
         </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
+        </div>
         <a href="privacy/style-preview.html" class="learn-more">Privacy Policy →</a>
       </div>
 
       <!-- TaskBeGone -->
       <div class="app-card" data-category="productivity">
-        <div class="app-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
-          ✅
+        <div class="app-icon">
+          <img src="images/taskbegone-logo.png" alt="TaskBeGone logo">
         </div>
         <h3>TaskBeGone</h3>
         <p class="tagline">Simple tasks, done simply.</p>
@@ -175,6 +209,10 @@
           <span class="tag">Tasks</span>
           <span class="tag">Simple</span>
           <span class="tag">Productivity</span>
+        </div>
+        <div class="app-store-links">
+          <a href="#" title="Coming soon to Google Play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg> Google Play</a>
+          <a href="#" title="Coming soon to App Store"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg> App Store</a>
         </div>
         <a href="privacy/taskbegone.html" class="learn-more">Privacy Policy →</a>
       </div>
@@ -269,6 +307,21 @@
   </footer>
 
   <script>
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
     // Category filtering
     document.querySelectorAll('.category-btn').forEach(btn => {
       btn.addEventListener('click', () => {
