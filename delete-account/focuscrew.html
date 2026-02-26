@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account - FocusCrew | Lifestyle App Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo">Lifestyle App Studios</a>
+    <ul class="nav-links">
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2zm18 0h2a1 1 0 1 0 0-2h-2a1 1 0 1 0 0 2zM11 2v2a1 1 0 1 0 2 0V2a1 1 0 1 0-2 0zm0 18v2a1 1 0 1 0 2 0v-2a1 1 0 1 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 1 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41 0l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06a1 1 0 0 0 0-1.41zM7.05 18.36a1 1 0 0 0-1.41 0l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06a1 1 0 0 0 0-1.41z"/></svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="privacy-content">
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <h1>Delete Your FocusCrew Account</h1>
+    <p class="updated">Data Deletion Request</p>
+
+    <p>We respect your right to control your data. You can delete your FocusCrew account and all associated data using one of the methods below.</p>
+
+    <h2>Option 1: Delete from the App (Recommended)</h2>
+    <p>The fastest way to delete your account is directly within the FocusCrew app:</p>
+    <ol>
+      <li>Open the FocusCrew app</li>
+      <li>Go to <strong>Settings</strong> (gear icon)</li>
+      <li>Scroll down to the <strong>Account</strong> section</li>
+      <li>Tap <strong>Delete Account</strong></li>
+      <li>Confirm deletion when prompted</li>
+    </ol>
+    <p>Your account and all data will be deleted immediately.</p>
+
+    <h2>Option 2: Request Deletion via Email</h2>
+    <p>If you cannot access the app or prefer to request deletion via email:</p>
+    <p>
+      <a href="mailto:privacy@lifestyleappstudios.com?subject=Account%20Deletion%20Request%20-%20FocusCrew&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20FocusCrew%20account%20and%20all%20associated%20data.%0A%0AAccount%20email%3A%20%5BYour%20email%20here%5D%0A%0AThank%20you." class="cta-button" style="display: inline-block; background: var(--primary); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">
+        Request Account Deletion
+      </a>
+    </p>
+    <p>Please include the email address associated with your FocusCrew account. We will process your request within 7 days and send confirmation once complete.</p>
+
+    <h2>What Data Will Be Deleted?</h2>
+    <p>When you delete your account, we permanently remove:</p>
+    <ul>
+      <li><strong>Profile Information:</strong> Your email, display name, and profile photo</li>
+      <li><strong>Focus Sessions:</strong> All your recorded focus session history</li>
+      <li><strong>Statistics:</strong> Your streaks, total focus time, and daily stats</li>
+      <li><strong>Friend Connections:</strong> All friendships and pending requests</li>
+    </ul>
+
+    <h2>What Happens After Deletion?</h2>
+    <ul>
+      <li>Your account cannot be recovered after deletion</li>
+      <li>Your friends will no longer see you in their friends list</li>
+      <li>Any active sessions will be terminated</li>
+      <li>If you had a Pro subscription, it will be cancelled (manage via App Store/Google Play)</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <p>Once deletion is confirmed:</p>
+    <ul>
+      <li>All personal data is removed from our servers immediately</li>
+      <li>Backup data is purged within 30 days</li>
+      <li>Anonymized, aggregated analytics may be retained</li>
+    </ul>
+
+    <h2>Questions?</h2>
+    <p>If you have any questions about data deletion, please contact us:</p>
+    <p>Email: <a href="mailto:privacy@lifestyleappstudios.com">privacy@lifestyleappstudios.com</a></p>
+
+    <p class="copyright">&copy; 2024 Lifestyle App Studios. All rights reserved.</p>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
+</body>
+</html>
