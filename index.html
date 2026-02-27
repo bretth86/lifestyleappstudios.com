@@ -268,7 +268,7 @@
       <h3>Tell Us About Your Project</h3>
       <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-      <form action="https://formspree.io/f/xlgwzqvg" method="POST" class="contact-form">
+      <form id="enquiry-form" action="https://formspree.io/f/xlgwzqvg" method="POST" class="contact-form">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Your Name</label>
@@ -311,6 +311,18 @@
 
         <button type="submit" class="btn btn-primary">Send Enquiry</button>
       </form>
+
+      <div id="form-success" class="form-message success" style="display: none;">
+        <div class="message-icon">✓</div>
+        <h4>Thank you for your enquiry!</h4>
+        <p>We've received your message and will get back to you within 24 hours.</p>
+      </div>
+
+      <div id="form-error" class="form-message error" style="display: none;">
+        <div class="message-icon">!</div>
+        <h4>Something went wrong</h4>
+        <p>Please try again or email us directly at <a href="mailto:support@lifestyleappstudios.com">support@lifestyleappstudios.com</a></p>
+      </div>
     </div>
   </section>
 
@@ -433,6 +445,41 @@
           }
         });
       });
+    });
+
+    // Contact form submission
+    const enquiryForm = document.getElementById('enquiry-form');
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+
+    enquiryForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = enquiryForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch(enquiryForm.action, {
+          method: 'POST',
+          body: new FormData(enquiryForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          enquiryForm.style.display = 'none';
+          formSuccess.style.display = 'block';
+          enquiryForm.reset();
+        } else {
+          formError.style.display = 'block';
+        }
+      } catch (error) {
+        formError.style.display = 'block';
+      }
+
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
     });
   </script>
 </body>
