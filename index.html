@@ -16,6 +16,7 @@
     <a href="/" class="logo">Lifestyle App Studios</a>
     <ul class="nav-links">
       <li><a href="#apps">Apps</a></li>
+      <li><a href="#services">Custom Development</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
@@ -219,6 +220,100 @@
     </div>
   </section>
 
+  <!-- Custom Development Section -->
+  <section id="services">
+    <div class="section-header">
+      <h2>Need a <span class="gradient-text">Custom App</span>?</h2>
+      <p>Have an app idea? We can bring it to life. From concept to launch, we build custom mobile and web applications tailored to your needs.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12" y2="18"/>
+          </svg>
+        </div>
+        <h3>Mobile Apps</h3>
+        <p>Native iOS and Android apps that users love. Clean design, smooth performance, and built to scale.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Web Applications</h3>
+        <p>Modern web apps and websites. Responsive, fast, and accessible across all devices.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>Full Stack Solutions</h3>
+        <p>End-to-end development including backend APIs, databases, and cloud infrastructure.</p>
+      </div>
+    </div>
+
+    <div class="contact-form-container">
+      <h3>Tell Us About Your Project</h3>
+      <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+      <form action="https://formspree.io/f/xlgwzqvg" method="POST" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">Project Type</label>
+          <select id="project-type" name="project_type" required>
+            <option value="" disabled selected>Select a project type</option>
+            <option value="mobile-app">Mobile App (iOS/Android)</option>
+            <option value="web-app">Web Application</option>
+            <option value="website">Website</option>
+            <option value="full-stack">Full Stack Solution</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell Us About Your Idea</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Describe your app idea, the problem it solves, and any specific features you have in mind..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Estimated Budget (Optional)</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select a budget range</option>
+            <option value="under-5k">Under $5,000</option>
+            <option value="5k-15k">$5,000 - $15,000</option>
+            <option value="15k-50k">$15,000 - $50,000</option>
+            <option value="50k+">$50,000+</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section id="about">
     <div class="section-header">
@@ -295,6 +390,7 @@
       <div class="footer-links">
         <h4>Company</h4>
         <ul>
+          <li><a href="#services">Custom Development</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
